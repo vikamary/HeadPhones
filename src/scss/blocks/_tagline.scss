@@ -5,10 +5,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 12px;
+  font-family: "Inter", sans-serif;
 
-  .tag__icon{
+  .tagline__icon{
     color: #fff;
+    width: 22px;
   }
 
+  .tagline__links{
+ 
+  }
+
+  .tagline__link{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tagline__block-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    line-height: 22px;
+    border-bottom: 1px solid #FFAB00;
+  }
+
+  a{
+    color: #FFAB00;
+    text-decoration: none;
+  }
 }

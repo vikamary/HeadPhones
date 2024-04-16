@@ -8,10 +8,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 12px;
+  font-family: "Inter", sans-serif;
 }
-.tagline .tag__icon {
+.tagline .tagline__icon {
   color: #fff;
+  width: 22px;
+}
+.tagline .tagline__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tagline .tagline__block-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  line-height: 22px;
+  border-bottom: 1px solid #FFAB00;
+}
+.tagline a {
+  color: #FFAB00;
+  text-decoration: none;
 }
 
 * {
