@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .arrivals__title {
@@ -195,5 +196,10 @@ gap: 2px;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
+}
+
+.arrivals__slider{
+  display: flex;
+  gap: 24px;
 }
 

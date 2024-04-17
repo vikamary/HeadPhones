@@ -6,5 +6,3 @@ const tagline = document.querySelector('.tagline');
 closeTagLineBtn.onclick = function() {
   tagline.remove();
 }
-
-// console.log(closeTagLineBtn);
