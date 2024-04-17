@@ -349,6 +349,10 @@ header .number {
   margin: auto;
 }
 
+.container-right {
+  padding-left: calc((100% - 1184px) / 2 + 32px);
+}
+
 .butttn {
   background: none;
   border: none;
