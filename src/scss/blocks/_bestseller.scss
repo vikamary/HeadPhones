@@ -1,0 +1,25 @@
+.bestseller__title{
+  margin: 48px 0 48px;
+  font-family: var(--font-poppins);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.4px;
+}
+
+.bestseller__wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.small--title{
+  max-width: 96px;
+  width: 100%;
+}
+
+.med--title{
+  max-width: 150px;
+  width: 100%;
+}
