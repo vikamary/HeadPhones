@@ -434,6 +434,26 @@ header .number {
   width: 100%;
 }
 
+.banner {
+  background-color: rgba(255, 171, 0, 0.4);
+  display: grid;
+  gap: 24px;
+}
+
+.banner__content {
+  padding: 100px 0;
+}
+
+.banner__wrpapper {
+  display: grid;
+  gap: 16px;
+}
+
+.banner__timer {
+  display: grid;
+  gap: 12px;
+}
+
 :root {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
