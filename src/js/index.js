@@ -10,18 +10,30 @@ closeTagLineBtn.onclick = function() {
 // const endDate = new Date();
 // endDate.setDate(endDate.getDate() + 3);
 
-const endDate = new Date('Apr 29, 2024, 23:59:59');
+const endDate = new Date('Apr 30, 2024, 23:59:59');
 
 const daysElement = document.querySelector('#days');
 const hoursElement = document.querySelector('#hours');
 const minutesElement = document.querySelector('#minutes');
 const secondsElement = document.querySelector('#seconds');
 
+let timerInterval;
+
 function updateTimer() {
+  // console.log('updateTimer');
   const now = new Date();
 
   const timeDifference = endDate - now;
   // console.log('timeDefference', timeDifference);
+
+  if(timeDifference <= 0) {
+    daysElement.innerText = '0';
+    hoursElement.innerText = '0';
+    minutesElement.innerText = '0';
+    secondsElement.innerText = '0';
+    clearInterval(timerInterval);
+    return;
+  }
   
   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -32,7 +44,9 @@ function updateTimer() {
   hoursElement.innerText = hours;
   minutesElement.innerText = minutes;
   secondsElement.innerText = seconds;
+
 }
 
 updateTimer();
-setInterval(updateTimer, 1000);
+timerInterval = setInterval(updateTimer, 1000);
+
