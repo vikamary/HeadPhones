@@ -20,11 +20,11 @@ const secondsElement = document.querySelector('#seconds');
 let timerInterval;
 
 function updateTimer() {
-  // console.log('updateTimer');
+  console.log('updateTimer');
   const now = new Date();
 
   const timeDifference = endDate - now;
-  // console.log('timeDefference', timeDifference);
+  console.log('timeDefference', timeDifference);
 
   if(timeDifference <= 0) {
     daysElement.innerText = '0';
