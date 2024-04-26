@@ -537,6 +537,39 @@ header .number {
   max-width: 154px;
 }
 
+.values {
+  padding: 40px 0;
+}
+
+.values__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  gap: 24px;
+}
+
+.value {
+  padding: 48px 32px;
+  background-color: #F3F5F7;
+}
+.value .value-icon {
+  margin-bottom: 16px;
+}
+.value .value__title {
+  margin-bottom: 8px;
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #141718;
+}
+.value .value__description {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6C7275;
+}
+
 :root {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
